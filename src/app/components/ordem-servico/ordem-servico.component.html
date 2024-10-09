@@ -1,0 +1,134 @@
+<div class="container">
+  <h2>Criar Ordem de Serviço</h2>
+  <form (ngSubmit)="criarOrdemServico()">
+
+    <!-- Número da Ordem -->
+    <div class="form-group">
+      <label for="numero">Número da Ordem:</label>
+      <input id="numero" [(ngModel)]="ordemServico.numero" name="numero" class="form-control" required>
+    </div>
+
+    <!-- Cliente -->
+    <div class="form-group">
+      <label for="cliente">Cliente:</label>
+      <input id="cliente" [(ngModel)]="ordemServico.cliente" name="cliente" class="form-control" required>
+    </div>
+
+    <!-- Situação -->
+    <div class="form-group">
+      <label for="situacao">Situação:</label>
+      <input id="situacao" [(ngModel)]="ordemServico.situacao" name="situacao" class="form-control" required>
+    </div>
+
+    <!-- Data de Entrada -->
+    <div class="form-group">
+      <label for="dataEntrada">Data de Entrada:</label>
+      <input id="dataEntrada" [(ngModel)]="ordemServico.dataEntrada" name="dataEntrada" type="date" class="form-control" required>
+    </div>
+
+    <!-- Hora de Entrada -->
+    <div class="form-group">
+      <label for="horaEntrada">Hora de Entrada:</label>
+      <input id="horaEntrada" [(ngModel)]="ordemServico.horaEntrada" name="horaEntrada" type="time" class="form-control" required>
+    </div>
+
+    <!-- Data de Saída -->
+    <div class="form-group">
+      <label for="dataSaida">Data de Saída:</label>
+      <input id="dataSaida" [(ngModel)]="ordemServico.dataSaida" name="dataSaida" type="date" class="form-control">
+    </div>
+
+    <!-- Canal de Venda -->
+    <div class="form-group">
+      <label for="canalVenda">Canal de Venda:</label>
+      <input id="canalVenda" [(ngModel)]="ordemServico.canalVenda" name="canalVenda" class="form-control">
+    </div>
+
+    <!-- Centro de Custo -->
+    <div class="form-group">
+      <label for="centroCusto">Centro de Custo:</label>
+      <input id="centroCusto" [(ngModel)]="ordemServico.centroCusto" name="centroCusto" class="form-control">
+    </div>
+
+    <!-- Prioridade -->
+    <div class="form-group">
+      <label for="prioridade">Prioridade:</label>
+      <input id="prioridade" [(ngModel)]="ordemServico.prioridade" name="prioridade" class="form-control">
+    </div>
+
+    <!-- Vendedor -->
+    <div class="form-group">
+      <label for="vendedor">Vendedor:</label>
+      <input id="vendedor" [(ngModel)]="ordemServico.vendedor" name="vendedor" class="form-control" required>
+    </div>
+
+    <!-- Técnico -->
+    <div class="form-group">
+      <label for="tecnico">Técnico:</label>
+      <input id="tecnico" [(ngModel)]="ordemServico.tecnico" name="tecnico" class="form-control">
+    </div>
+
+    <!-- Potência -->
+    <div class="form-group">
+      <label for="potencia">Potência:</label>
+      <input id="potencia" [(ngModel)]="ordemServico.potencia" name="potencia" class="form-control">
+    </div>
+
+    <!-- Tensão de Entrada -->
+    <div class="form-group">
+      <label for="tensaoEntrada">Tensão de Entrada:</label>
+      <input id="tensaoEntrada" [(ngModel)]="ordemServico.tensaoEntrada" name="tensaoEntrada" class="form-control">
+    </div>
+
+    <!-- Tensão de Saída -->
+    <div class="form-group">
+      <label for="tensaoSaida">Tensão de Saída:</label>
+      <input id="tensaoSaida" [(ngModel)]="ordemServico.tensaoSaida" name="tensaoSaida" class="form-control">
+    </div>
+
+    <!-- Equipamento -->
+    <div class="form-group">
+      <label for="equipamento">Equipamento:</label>
+      <input id="equipamento" [(ngModel)]="ordemServico.equipamento" name="equipamento" class="form-control" required>
+    </div>
+
+    <!-- Marca -->
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <input id="marca" [(ngModel)]="ordemServico.marca" name="marca" class="form-control">
+    </div>
+
+    <!-- Modelo -->
+    <div class="form-group">
+      <label for="modelo">Modelo:</label>
+      <input id="modelo" [(ngModel)]="ordemServico.modelo" name="modelo" class="form-control">
+    </div>
+
+    <!-- Série -->
+    <div class="form-group">
+      <label for="serie">Série:</label>
+      <input id="serie" [(ngModel)]="ordemServico.serie" name="serie" class="form-control">
+    </div>
+
+    <!-- Condições -->
+    <div class="form-group">
+      <label for="condicoes">Condições:</label>
+      <input id="condicoes" [(ngModel)]="ordemServico.condicoes" name="condicoes" class="form-control">
+    </div>
+
+    <!-- Defeitos -->
+    <div class="form-group">
+      <label for="defeitos">Defeitos:</label>
+      <textarea id="defeitos" [(ngModel)]="ordemServico.defeitos" name="defeitos" class="form-control"></textarea>
+    </div>
+
+    <!-- Acessórios -->
+    <div class="form-group">
+      <label for="acessorios">Acessórios:</label>
+      <textarea id="acessorios" [(ngModel)]="ordemServico.acessorios" name="acessorios" class="form-control"></textarea>
+    </div>
+
+    <!-- Botão de Envio -->
+    <button type="submit" class="btn btn-primary">Criar Ordem de Serviço</button>
+  </form>
+</div>
